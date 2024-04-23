@@ -3,7 +3,7 @@ body {
     display: grid;
     height: 500px;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns:repeat(3 1fr);
+    grid-template-columns:repeat(3, 1fr);
   }
 header {
     background: rgb(76, 76, 75);
