@@ -64,6 +64,9 @@ nav a {
     display: flex;
     align-items: center;
 }
+.photo1 img {
+    max-width: 100%;
+}
 .taiwan {
     grid-column: 2/4;
     grid-row: 4/5;
