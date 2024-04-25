@@ -1,4 +1,4 @@
-var currentYear = new Data().getFullYear();
+var currentYear = new Date().getFullYear();
 document.getElementById('copyright').textContent = '©' + currentYear + 'Yipei Lin';
 
 var lastModified = document.lastModified;
