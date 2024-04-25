@@ -92,7 +92,7 @@ h3 {
     border-radius: 5px;
     grid-column: 4/5;
     display: grid;
-    grid-row: 2fr 4fr;
+    grid-template-rows: 2fr 4fr;
 }
 .card2 div {
     grid-row: 2/3;
