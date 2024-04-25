@@ -63,8 +63,6 @@ nav a {
     justify-content: center;
     display: flex;
     align-items: center;
-}
-.photo1 img {
     max-width: 100%;
 }
 .taiwan {
