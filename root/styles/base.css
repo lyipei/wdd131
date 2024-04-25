@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #f2f4f3   ;
-    --secondary-color: #a9927d ;
-    --accent1-color: #5e503f;
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
