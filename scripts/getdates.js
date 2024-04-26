@@ -1,5 +1,9 @@
-var currentYear = new Date().getFullYear();
-document.getElementById('copyright').textContent = '©' + currentYear + 'Yipei Lin';
+window.addEventListener('load', () => {
+    const year = document.getElementById('currentyear');
+    year.innerHTML = new Date().getFullYear();
+});
 
-var lastModified = document.lastModified;
-document.getElementById('lastModified').textContent = 'Last Modified:' + lastModified;
+window.addEventListener('load', () => {
+    const modified = document.getElementById('lastModified');
+    modified.innerHTML = document.lastModified;
+});

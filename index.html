@@ -7,10 +7,10 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Yipei Lin">
     <meta name="author" content="Yipei Lin">
     <link href="styles/base.css" rel="stylesheet" >
-    <script src="scripts/getdates.js" defer></script>
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <header>
+    <header class="topic">
         <h1>WDD 131 - Dynamic Web Fundamentals - Yipei Lin</h1>
         <nav>
             <a href="https://www.linkedin.com/in/yipei-lin-98baa6294/">Linkedln</a>
@@ -19,40 +19,34 @@
             <a href="">Final Project</a>
         </nav>
     </header>
-    <main class="main-grid">
-        <section class="card1">
-            <h2>About Me</h2>
-            <p>My name is Yipei, hailing from the beautiful island of Taiwan, known for its diverse and delicious foods. I'm the eldest among my two sisters; one is currently a high school senior while the other is serving a mission in Toronto. My interests span from traveling to reading and even knitting.</p>
-        <div class="photo1">
-            <img id="me" src="images/1.jpg" alt="selfpicture">
-        </div>
-        <h3>Taiwan</h3>
-            <section class="taiwan">
-                <p>Taiwan, officially the Republic of China (ROC), is a country in East Asia. It is located at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. </p>
-            </section>
-        <div class="flag">
-            <img id="flag" src="images/Flag-Taiwan.webp" alt="taiwan-flag">
-        </div>
-            
+    <main>
+        <section class="card s1">
+            <h2 class="title">About Me</h2>
+            <img class="me" src="images/1.jpg" alt="selfpicture">
+            <p class="intro">
+                Hello! My name is Yipei, hailing from the beautiful island of Taiwan, known for its diverse and delicious foods. I'm the eldest among my two sisters; one is currently a high school senior while the other is serving a mission in Toronto. My interests span from traveling to reading and even knitting.
+            </p><br>
+            <h3>Taiwan</h3>
+            <hr>
+            <img class="flag" src="images/Flag-Taiwan.webp" alt="taiwan-flag">
+            <p class="intro">
+                Taiwan, officially the Republic of China (ROC), is a country in East Asia. It is located at the junction of the East and South China Seas in the northwestern Pacific Ocean, with the People's Republic of China (PRC) to the northwest, Japan to the northeast, and the Philippines to the south. 
+            </p> 
         </section>
 
-        <section class="card2">
-            <h2> Web Dev Resources</h2>
-            <div>
-            <a href="https://validator.w3.org/#validate_by_input">Check for the HTML</a><br>
-            <a href="https://imageresizer.com/">Resize the picture</a><br>
-            <a href="https://coolors.co/">Coolors</a><br>
-            <a href="https://fonts.google.com/">Font</a><br>
-            </div>
+        <section class="card s2">
+            <h2 class="title"> Web Dev Resources</h2>
+            <ul>
+            <li><a href="https://validator.w3.org/#validate_by_input">Check for the HTML</a></li>
+            <li><a href="https://imageresizer.com/">Resize the picture</a></li>
+            <li><a href="https://coolors.co/">Coolors</a></li>
+            <li><a href="https://fonts.google.com/">Google Font</a></li>
+            </ul>
         </section>
     </main>
-    <footer>
-        <p>
-            &copy; <span id="currentyear"></span> 
-            Yipei Lin 
-            Taiwan
-        </p>
-        <p id="lastModified"></p>
+    <footer class="topic">
+        <p>&copy;<span id="currentyear"></span> 🌻 Yipei Lin 🌻 Taiwan</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
