@@ -44,6 +44,7 @@ nav a {
 .card1 {
     background-color: #fff;
     padding: 20px;
+    margin: auto;
     border-radius: 5px;
     grid-column: 1/4;
     display: grid; 
