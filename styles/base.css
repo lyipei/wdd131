@@ -68,6 +68,8 @@ nav a {
 .taiwan {
     grid-column: 2/4;
     grid-row: 4/5;
+    font-size: 100%;
+    line-height: 50px;
     font-family: 'Jersey25', 'Arial Narrow', sans-serif;
 }
 .flag {
