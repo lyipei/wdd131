@@ -20,3 +20,7 @@ section {
 footer {
     color: #fff;
 }
+.grid {
+    display: grid;
+    align-items: center;
+}
