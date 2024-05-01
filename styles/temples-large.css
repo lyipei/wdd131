@@ -1,0 +1,29 @@
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    nav a {
+        flex: 1 1 100%;
+    }
+	nav ul {
+		display: flex;
+        justify-content: center;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    nav a:hover {
+        color: #8693AB;
+        background-color: #fff;
+        
+    }
+}
