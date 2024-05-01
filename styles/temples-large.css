@@ -8,14 +8,14 @@
         justify-content: flex-end;
         flex-direction: row;
     }
-    nav a {
-        flex: 1 1 100%;
+    .navigation a {
+        text-align: center;
     }
-	nav ul {
+	.navigation {
 		display: flex;
         justify-content: center;
 	}
-	nav ul li {
+	.navigation li {
 		flex: 1 1 100%;
 	}
     .grid-container {
@@ -26,4 +26,8 @@
         background-color: #fff;
         
     }
+    #menu {
+        display: none;
+    }
+
 }

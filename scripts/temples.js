@@ -7,12 +7,10 @@ window.addEventListener('load', () => {
     const modified = document.getElementById('lastModified');
     modified.innerHTML = document.lastModified;
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerBtn = document.querySelector('.menu');
-    const navMenu = document.querySelector('nav ul');
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
 
-    hamburgerBtn.addEventListener('clock', function() {
-        navMenu.classList.toggle('hide-menu');
-    });
-
+hamgutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
 });
