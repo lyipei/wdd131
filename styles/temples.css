@@ -106,6 +106,5 @@ footer {
     display: block;
     unicode-bidi: isolate;
     padding: 30px;
-    font-size: 1rem;
-    font-family: 'Itim', 'Arial Narrow', sans-serif;
+    font-size: 1.25rem;
 }
