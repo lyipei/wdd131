@@ -8,8 +8,8 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .navigation a:hover {
-        color:  #7e8ba3;
-        background-color: #fff;
+        color:  #e3d5ca;
+        background-color: #253d6a;
         
     }
     
