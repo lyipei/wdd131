@@ -20,14 +20,14 @@ body {
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: #8693AB;
+	background-color:  #7e8ba3;
 	color: #fff;
 }
 #menu::before {
 	content: "≡";
 }
 nav {
-	background-color: #8693AB;
+	background-color:  #7e8ba3;
 }
 .navigation {
 	list-style: none;
@@ -76,7 +76,7 @@ header {
     
 }
 .topic {
-    background-color: #8693AB;
+    background-color: #7e8ba3;
     color: #fff;
     font-family: 'Kalam', 'Arial Narrow', sans-serif;
 }

@@ -8,7 +8,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .navigation a:hover {
-        color: #8693AB;
+        color:  #7e8ba3;
         background-color: #fff;
         
     }
@@ -31,5 +31,4 @@
 	#menu {
 		display: none;
 	}
-}
 }
