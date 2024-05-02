@@ -1,33 +1,35 @@
-@media (min-width: 600px) {
+@media only screen and (min-width: 40em) {
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    nav {
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-    .navigation a {
-        text-align: center;
-    }
-	.navigation {
-		display: flex;
-        justify-content: center;
-	}
-	.navigation li {
-		flex: 1 1 100%;
-	}
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    nav a:hover {
+    .navigation a:hover {
         color: #8693AB;
         background-color: #fff;
         
     }
-    #menu {
-        display: none;
+    
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
     }
-
+    .navigation {
+		display: flex;
+        justify-content: center;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
 }
