@@ -109,3 +109,9 @@ footer {
     padding: 30px;
     font-size: 1.25rem;
 }
+p {
+    font-family: 'Itim', 'Arial Narrow', sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    word-spacing: 1px;
+}
