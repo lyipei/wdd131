@@ -115,3 +115,11 @@ p {
     line-height: 35px;
     word-spacing: 1px;
 }
+h2 {
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 7px;
+    color: #253d6a;
+}
