@@ -1,10 +1,14 @@
+:root {
+    --primary-color: #001B69ff; /* Define a global variable for primary color */
+    --secondary-color: #B81137ff; /* Define another global variable for secondary color */
+}
 *   {
     margin: 0;
     padding: 0;
     
 }
 header {
-    background-color: #001B69ff;
+    background-color: var(--primary-color);
     text-align: center;
     font-size: 2.2rem;
     color: #fff;
@@ -36,7 +40,7 @@ img {
     font-weight: bold;
 }
 footer {
-    background-color: #001B69ff;
+    background-color: var(--primary-color);
     text-align: center;
     font-size: 22px;
     padding: 1rem;
@@ -66,7 +70,7 @@ footer {
   
     }
     .cards h1 {
-        background-color: #B81137ff;
+        background-color: var(--secondary-color);
         min-height:75px;
         margin:1rem 1rem 0 -1rem;
         padding:.5rem 0 0 1.5rem;
@@ -145,7 +149,7 @@ footer {
         text-align: right;
         margin-right: 5px;
     }
-    .right-vlaue{
+    .right-value{
         grid-column:2/3;
         margin-left: 5px;
     }
