@@ -6,11 +6,14 @@
 header {
     background-color: #001B69ff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #fff;
     padding: 2rem;
     border-bottom: #B81137ff solid 40px;
-
+    font-family: 'Poetsen One',Arial, sans-serif;
+}
+.cards {
+    font-family: 'Reddit Sans',Arial, sans-serif;
 }
 .hero {
 
