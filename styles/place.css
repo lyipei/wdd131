@@ -2,10 +2,10 @@
     --primary-color: #001B69ff; /* Define a global variable for primary color */
     --secondary-color: #B81137ff; /* Define another global variable for secondary color */
 }
+
 *   {
     margin: 0;
     padding: 0;
-    
 }
 header {
     background-color: var(--primary-color);
@@ -23,17 +23,12 @@ header {
 
     max-width: 100%;
 }
-img {
+.hero img {
     width: 100%;
     height: auto;
 }
 
-.card-weather h1::after {
-    content:url("../images/weather.svg");
-    width: 80px;
-    display:inline-block;
-    vertical-align: middle;
-}
+
 .left-label {
     text-align: right;
     margin-right: 1rem;
@@ -101,6 +96,15 @@ footer {
         display: flex;
         align-items: center;
     }
+    .card-weather h1::after {
+        content: " ⛅️ ";
+        display: block;
+    }
+    
+    .weather-icon {
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -153,6 +157,16 @@ footer {
         grid-column:2/3;
         margin-left: 5px;
     }
-
-    
+    .weather-icon {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/3;
+        max-width: 100%;
+    }
+    .emoji {
+        grid-column: 1;
+        width: 100%;
+        max-width: 140px;
+        justify-self: center;
+    }
 }
