@@ -3,11 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD131- New Zealand</title>
+    <meta name="description" content="Place Introduction">
+    <meta name="author" content="Yipei Lin">
     <link rel="stylesheet" href="styles/place.css">
     <script defer src="scripts/place.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>New Zealand</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="hoiho">
+            </picture>
+        </div>
+        <div class="cards">
+            <div class="cards-data">
+                <h1>Data</h1>
+                <div class="left-label">
+                    <p>Area: </p>
+                    <p>Population: </p>
+                    <p>Capital: </p>
+                    <p>Languages: </p>
+                    <p>Currency: </p>
+                    <p>Time Zone: </p>
+                    <p>Calling Code: </p>
+                    <p>Internet TLD: </p>
+                </div>
+                <div class="right-value">
+                    <p>268,021 km2</p>
+                    <p>5,354,860</p>
+                    <p>Wellington</p>
+                    <p>English, Māori</p>
+                    <p>New Zealand dollar</p>
+                    <p>UTC+12</p>
+                    <p>+64</p>
+                    <p>.nz</p>
+                </div>
+            </div>
+            <div class="cards-weather">
+                <h1>Weather</h1>
+                <div class="left-label">
+                    <p>Temperature: </p>
+                    <p>Conditions: </p>
+                    <p>Wind: </p>
+                    <p>Wind Chill: </p>
+                </div>
+                <div class="right-value">
+                    <p>10˚C </p>
+                    <p>Cloudy</p>
+                    <p>29 km/h </p>
+                    <p class="wind-chill"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="topic">
+        <p>&copy;<span id="currentyear"></span> 🌻 Yipei Lin 🌻 Taiwan</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
