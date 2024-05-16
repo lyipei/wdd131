@@ -106,7 +106,7 @@ figcaption {
     font-family: "Reddit Sans", sans-serif;
 }
 
-h2 {
+.temple-container h2 {
     font-family: 'Patrick Hand', sans-serif;
     text-align: left;
     align-items: center;
@@ -114,7 +114,6 @@ h2 {
     font-size: 30px;
     margin-top: 20px;
     color: #253d6a;
-    display: flex;
 }
 img {
     width: 400px;
