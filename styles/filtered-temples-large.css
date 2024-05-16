@@ -1,0 +1,34 @@
+@media only screen and (min-width: 40em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navigation a:hover {
+        color:  #e3d5ca;
+        background-color: #253d6a;
+        
+    }
+    
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .navigation {
+		display: flex;
+        justify-content: center;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}

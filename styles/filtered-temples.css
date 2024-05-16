@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color:  #e3d5ca;
+	color: #253d6a;
+}
+#menu::before {
+	content: "≡";
+}
+nav {
+	background-color: #e3d5ca;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #253d6a;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 120%;
+  
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+.show li {
+	display: block;
+}
+#menu.show::before {
+	content: "X";
+}
+
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+    margin: 15px;
+}
+
+
+header {
+    background-color: #e3d5ca;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    
+}
+.topic {
+    background-color: #e3d5ca;
+    color: #253d6a;
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+}
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    margin: 10px;
+    font-size: 18px;
+    color: #253d6a;
+    font-family: 'Itim', 'Arial Narrow', sans-serif;
+}
+footer {
+    margin-top: 15px;
+    display: block;
+    unicode-bidi: isolate;
+    padding: 30px;
+    font-size: 1.25rem;
+}
+p {
+    font-family: 'Itim', 'Arial Narrow', sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    word-spacing: 1px;
+}
+h2 {
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 7px;
+    color: #253d6a;
+}
