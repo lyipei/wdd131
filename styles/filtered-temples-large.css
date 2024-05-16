@@ -1,18 +1,45 @@
-@media only screen and (min-width: 40em) {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+}
+
+@media only screen and (min-width: 640px) {
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
     }
     .navigation a:hover {
         color:  #e3d5ca;
         background-color: #253d6a;
         
     }
+    h2 {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
     
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
     nav {
         justify-content: flex-end;
         flex-direction: row;
@@ -24,6 +51,7 @@
 	.navigation li {
 		display: block; /* change state in small view */
 		flex: 1 1 100%;
+        
 	}
 	.navigation a {
 		text-align: center;

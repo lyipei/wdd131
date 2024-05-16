@@ -6,33 +6,41 @@
 	box-sizing: border-box;
 }
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    text-align: center;
-    height: 100vh;
-    display: grid;
+
     font-family: 'Kalam', 'Arial Narrow', sans-serif;
 }
+header {
+    background-color: #e3d5ca;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+header, main {
+    margin: auto;
+}
+.navigation {
+	list-style: none;
+}
 #menu {
-	display: block;
 	font-size: 2rem;
-	font-weight:700;
 	text-decoration: none;
-	padding: .5rem .75rem;
 	background-color:  #e3d5ca;
 	color: #253d6a;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 #menu::before {
 	content: "≡";
 }
 nav {
 	background-color: #e3d5ca;
+    display: flex;
+    flex-direction: column;
 }
 .navigation {
 	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+
 }
 .navigation li {
 	display: none;
@@ -66,60 +74,58 @@ main {
 h1 {
 	font-size: 2rem;
     margin: 15px;
-}
-
-
-header {
-    background-color: #e3d5ca;
-    display: grid;
-    grid-gap: 1rem;
-    padding: 20px;
-    
-}
-.topic {
-    background-color: #e3d5ca;
     color: #253d6a;
-    font-family: 'Kalam', 'Arial Narrow', sans-serif;
 }
 
-.grid-container {
+
+
+section {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-content: center;
-    padding: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 1rem auto;
+    max-width: 400px;
 }
 figure {
     margin: 0;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 figcaption {
-    margin: 10px;
-    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
     color: #253d6a;
     font-family: 'Itim', 'Arial Narrow', sans-serif;
 }
+
+h2 {
+    font-family: 'Kalam', 'Arial Narrow', sans-serif;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #253d6a;
+    display: flex;
+}
+img {
+    width: 360px;
+}
+/*footer*/
 footer {
-    margin-top: 15px;
-    display: block;
-    unicode-bidi: isolate;
-    padding: 30px;
+    padding: 20px;
     font-size: 1.25rem;
+    text-align: center;
+    background-color:#e3d5ca;
+    color: #253d6a;
 }
 p {
     font-family: 'Itim', 'Arial Narrow', sans-serif;
     font-size: 22px;
     line-height: 35px;
     word-spacing: 1px;
-}
-h2 {
-    font-family: 'Kalam', 'Arial Narrow', sans-serif;
-    text-align: center;
-    font-size: 35px;
-    margin-top: 35px;
-    margin-bottom: 7px;
-    color: #253d6a;
 }

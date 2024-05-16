@@ -40,7 +40,7 @@ const temples = [
       dedicated: "2015, June, 7",
       area: 96630,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
     },
     {
       templeName: "Yigo Guam",
@@ -83,12 +83,12 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-459051-wallpaper.jpg"
     },
     {
-        templeName: "Rexburg Idaho",
-        location: "Rexburg, Idaho, United States",
-        dedicated: "2008, February, 10",
-        area: 57504,
+        templeName: "Calgray Alberta",
+        location: "Calgary, Alberta, Canada",
+        dedicated: "2012, October, 28",
+        area: 33000,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-776440-wallpaper.jpg"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/400x250/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg"
     },
     {
         templeName: "Laie Hawaii",
@@ -100,3 +100,70 @@ const temples = [
     },
 
   ];
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.temple-container');
+    const homeLink = document.getElementById('home');
+    const oldLink = document.getElementById('old');
+    const newLink = document.getElementById('new');
+    const largeLink = document.getElementById('large');
+    const smallLink = document.getElementById('small');
+
+
+    const displayTemples = (filteredTemples) => {
+        container.innerHTML = ''; // Clear existing content
+        filteredTemples.forEach(temple => {
+            const figure = document.createElement('figure');
+            figure.classList.add('hover');
+
+            const img = document.createElement('img');
+            img.src = temple.imageUrl;
+            img.alt = temple.templeName;
+            img.loading = "lazy";
+            figure.appendChild(img);
+
+            const figcaption = document.createElement('figcaption');
+            figcaption.innerHTML = `
+                <h3>${temple.templeName}</h3>
+                <p>Location: ${temple.location}</p>
+                <p>Dedicated: ${formatDate(temple.dedicated)}</p>
+                <p>Area: ${temple.area.toLocaleString()} sq ft</p>
+            `;
+            figure.appendChild(figcaption);
+
+            container.appendChild(figure);
+        });
+    };
+
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        const year = date.getFullYear();
+        const month = date.toLocaleString('default', { month: 'long' });
+        const day = date.getDate();
+        return `${year}, ${month}, ${day}`;
+    };
+
+    homeLink.addEventListener('click', () => displayTemples(temples));
+
+    oldLink.addEventListener('click', () => {
+        const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+        displayTemples(oldTemples);
+    });
+
+    newLink.addEventListener('click', () => {
+        const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+        displayTemples(newTemples);
+    });
+
+    largeLink.addEventListener('click', () => {
+        const largeTemples = temples.filter(temple => temple.area > 90000);
+        displayTemples(largeTemples);
+    });
+
+    smallLink.addEventListener('click', () => {
+        const smallTemples = temples.filter(temple => temple.area < 10000);
+        displayTemples(smallTemples);
+    });
+
+    // Display all temples by default when the page loads
+    displayTemples(temples);
+});
