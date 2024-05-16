@@ -100,7 +100,8 @@ const temples = [
     },
 
   ];
-  document.addEventListener('DOMContentLoaded', () => {
+  (function() {
+    // Constants for DOM elements
     const container = document.querySelector('.temple-container');
     const homeLink = document.getElementById('home');
     const oldLink = document.getElementById('old');
@@ -108,32 +109,36 @@ const temples = [
     const largeLink = document.getElementById('large');
     const smallLink = document.getElementById('small');
 
+    // Function to render a single temple element
+    const renderTemple = (temple) => {
+        const figure = document.createElement('figure');
+        figure.classList.add('hover');
 
-    const displayTemples = (filteredTemples) => {
-        container.innerHTML = ''; // Clear existing content
-        filteredTemples.forEach(temple => {
-            const figure = document.createElement('figure');
-            figure.classList.add('hover');
+        const img = document.createElement('img');
+        img.src = temple.imageUrl;
+        img.alt = temple.templeName;
+        img.loading = "lazy";
+        figure.appendChild(img);
 
-            const img = document.createElement('img');
-            img.src = temple.imageUrl;
-            img.alt = temple.templeName;
-            img.loading = "lazy";
-            figure.appendChild(img);
+        const figcaption = document.createElement('figcaption');
+        figcaption.innerHTML = `
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${formatDate(temple.dedicated)}</p>
+            <p>Area: ${temple.area.toLocaleString()} sq ft</p>
+        `;
+        figure.appendChild(figcaption);
 
-            const figcaption = document.createElement('figcaption');
-            figcaption.innerHTML = `
-                <h3>${temple.templeName}</h3>
-                <p>Location: ${temple.location}</p>
-                <p>Dedicated: ${formatDate(temple.dedicated)}</p>
-                <p>Area: ${temple.area.toLocaleString()} sq ft</p>
-            `;
-            figure.appendChild(figcaption);
-
-            container.appendChild(figure);
-        });
+        container.appendChild(figure);
     };
 
+    // Function to display temples based on filters
+    const displayTemples = (filteredTemples) => {
+        container.innerHTML = ''; // Clear existing content
+        filteredTemples.forEach(renderTemple);
+    };
+
+    // Function to format date
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         const year = date.getFullYear();
@@ -142,28 +147,13 @@ const temples = [
         return `${year}, ${month}, ${day}`;
     };
 
+    // Event listeners for navigation links
     homeLink.addEventListener('click', () => displayTemples(temples));
+    oldLink.addEventListener('click', () => displayTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));
+    newLink.addEventListener('click', () => displayTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000)));
+    largeLink.addEventListener('click', () => displayTemples(temples.filter(temple => temple.area > 90000)));
+    smallLink.addEventListener('click', () => displayTemples(temples.filter(temple => temple.area < 10000)));
 
-    oldLink.addEventListener('click', () => {
-        const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-        displayTemples(oldTemples);
-    });
-
-    newLink.addEventListener('click', () => {
-        const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
-        displayTemples(newTemples);
-    });
-
-    largeLink.addEventListener('click', () => {
-        const largeTemples = temples.filter(temple => temple.area > 90000);
-        displayTemples(largeTemples);
-    });
-
-    smallLink.addEventListener('click', () => {
-        const smallTemples = temples.filter(temple => temple.area < 10000);
-        displayTemples(smallTemples);
-    });
-
-    // Display all temples by default when the page loads
+    // Initial display of all temples
     displayTemples(temples);
-});
+})();
