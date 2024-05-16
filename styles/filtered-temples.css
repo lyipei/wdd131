@@ -75,7 +75,12 @@ h1 {
     margin: 15px;
     color: #253d6a;
 }
-
+h3 {
+    font-size: 20px;
+}
+p {
+    font-size: 17px;
+}
 
 
 section {
@@ -117,16 +122,11 @@ img {
 
 }
 /*footer*/
-footer {
-    padding: 20px;
-    font-size: 1.5rem;
+footer p {
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
     background-color:#e3d5ca;
     color: #253d6a;
-}
-p {
     font-family: 'Patrick Hand', sans-serif;
-    font-size: 25px;
-    line-height: 35px;
-    word-spacing: 1px;
 }
