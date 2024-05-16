@@ -112,7 +112,9 @@ h2 {
     display: flex;
 }
 img {
-    width: 360px;
+    width: 400px;
+    height: 250px;
+
 }
 /*footer*/
 footer {

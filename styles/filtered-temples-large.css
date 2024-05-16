@@ -59,4 +59,8 @@ body {
 	#menu {
 		display: none;
 	}
+    img {
+        width: 400px;
+        height: 250px;
+    }
 }
