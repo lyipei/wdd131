@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Confirmation</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="WDD131-Product Review Form">
+    <meta name="author" content="Yipei Lin">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js"></script>
+
 </head>
 <body>
-    <h2>Thank you for your review!</h2>
-    <p>Your review has been submitted successfully.</p>
-
+    <header><h1>Product Review</h1></header>
+    <main>
+        <h2>Thank you for your review!</h2>
+        <p>Your review has been submitted successfully.</p>
+    </main>
     <footer>
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>&copy;<span id="currentyear"></span> 🌻 Yipei Lin 🌻 Taiwan</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-
-    <script>
-        if (localStorage.getItem('reviewCount') === null) {
-            localStorage.setItem('reviewCount', 0);
-        }
-        
-        let reviewCount = parseInt(localStorage.getItem('reviewCount'));
-        reviewCount++;
-        localStorage.setItem('reviewCount', reviewCount);
-
-        document.body.insertAdjacentHTML('beforeend', `<p>You have submitted ${reviewCount} reviews.</p>`);
-    </script>
 </body>
 </html>
