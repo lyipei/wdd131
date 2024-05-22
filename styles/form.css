@@ -102,26 +102,26 @@ main {
 .stars {
     display: flex;
     justify-content: space-between;
-
 }
 .starts input {
     display: none;
+
 }
 
 .stars label {
     font-size: 22px;
     cursor: pointer;
     padding: 5px;
+    
 }
 
-
 .wf1 fieldset {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     border: none;
     border-radius: 6px;
     padding:0;
-    padding-top: 1rem;
     margin-bottom: .3rem;
+    margin-top: 10px;
 }
 small {
     color: darkblue;
