@@ -1,0 +1,129 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header, footer {
+    padding: .5rem 2%;
+    background-color: #3b2e3e;
+    color: #fff;
+    text-align: center;
+    max-width: 420px;
+}
+header h1 {margin: 1rem;}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.wf1 {
+    background-color: #cdbdd1;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 420px;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin-bottom: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: 10px;
+
+}
+.wf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: 10px;
+    height: 7rem;
+}
+
+.wf1 input[type="checkbox"]
+{
+    margin-right: 6px;
+    width: 17px;
+    height: 17px;
+}
+.wf1 input[type="submit"]
+{
+    border: none;
+    background-color: #999;
+    color: black;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 4px #c0bdbd;
+}
+.wf1 input[type="radio"]
+{
+    display: block;
+    margin-top: 10px;
+}
+.stars {
+    display: flex;
+    justify-content: space-between;
+
+}
+.starts input {
+    display: none;
+}
+
+.stars label {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+small {
+    color: darkblue;
+}
+.wf1 input:required, .wf1 select:required {
+    border-right: solid 3px red;
+    /*border-right:solid 2px red;*/
+}

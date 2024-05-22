@@ -8,13 +8,10 @@
     <meta name="author" content="Yipei Lin">
     <link href="styles/form.css" rel="stylesheet">
     <script src="scripts/form.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header><h1>Product Review</h1></header>
-    <form action="review.html" method="get">
+    <form action="review.html" method="get" class="wf1">
         <label>Product Name
             <select id="productName" name="productName" required>
                 <option value="">Choose a Product</option>
@@ -22,31 +19,30 @@
         </label>
 
         <label>Overall Rating</label>
-        <div>
-            <input type="radio" id="star1" name="rating" value="1" required>
-            <label for="star1">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2" required>
-            <label for="star2">&#9733;&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3" required>
-            <label for="star3">&#9733;&#9733;&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4" required>
-            <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
-            <input type="radio" id="star5" name="rating" value="5" required>
-            <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>          
+        <div class="stars">
+            <label><input type="radio" id="star1" name="rating" value="1" required>&#9733;</label>
+            <label><input type="radio" id="star2" name="rating" value="2" required>&#9733;&#9733;</label>
+            <label><input type="radio" id="star3" name="rating" value="3" required>&#9733;&#9733;&#9733;</label>
+            <label><input type="radio" id="star4" name="rating" value="4" required>&#9733;&#9733;&#9733;&#9733;</label>
+            <label><input type="radio" id="star5" name="rating" value="5" required>&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                
         </div>
 
         <label>Date of Instiallation<input type="date" name="installationDate" required></label>
+        
+        <fieldset>
+            <legend>Which features did you find useful in the porduct?</legend>
+            <small>(Check all that apply)</small>
+            <label><input type="checkbox" name="feature" value="durability">Durability</label>
+            <label><input type="checkbox" name="feature" value="ease_of_use">Ease of Use</label>
+            <label><input type="checkbox" name="feature" value="performance">Performance</label>
+            <label><input type="checkbox" name="feature" value="design">Design</label>
+        </fieldset>
 
-        <div>Which features did you find useful in the porduct?</div>
-        <label><input type="checkbox" name="durability" value="feature">Durability</label>
-        <label><input type="checkbox" name="usefull" value="feature">Ease of Use</label>
-        <label><input type="checkbox" name="performance" value="feature">Performance</label>
-        <label><input type="checkbox" name="design" value="feature">Design</label>
-
-        <label>Written Review</label>
+        <label>Written Review<small>(Optional)</small></label>
         <textarea id="review" name="review"></textarea>
 
-        <label>Your Name</label>
+        <label>Your Name<small>(Optional)</small></label>
         <input type="text" id="userName" name="userName">
 
         <input type="submit" value="Post Review">
