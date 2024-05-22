@@ -36,9 +36,10 @@ main {
 
 .wf1 label {
     display: block;
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     font-size: 1rem;
     margin-bottom: .9rem;
+    
 }
 .wf1 div {
     padding-top: 1rem;
@@ -81,11 +82,11 @@ main {
 }
 .wf1 input[type="submit"]
 {
-    border: none;
-    background-color: #999;
+    border: solid 1px black;
+    background-color: #cbc7c7;
     color: black;
     padding: .8rem;
-    width: 96%;
+    width: 100%;
     max-width: 400px;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -96,6 +97,9 @@ main {
 {
     display: block;
     margin-top: 10px;
+    width: 20px;
+    height: 20px;
+
 }
 .stars {
     display: flex;
@@ -110,15 +114,17 @@ main {
     font-size: 22px;
     cursor: pointer;
     padding: 5px;
+
 }
 
-fieldset {
+
+.wf1 fieldset {
+    margin: 2rem 0;
     border: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    
+    border-radius: 6px;
+    padding:0;
+    padding-top: 1rem;
+    margin-bottom: .3rem;
 }
 small {
     color: darkblue;
