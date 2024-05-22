@@ -12,10 +12,11 @@
 <body>
     <header><h1>Product Review</h1></header>
     <form action="review.html" method="get" class="wf1">
-        <label>Product Name</label>
+        <label>Product Name
             <select id="productName" name="productName" required>
                 <option value="">Choose a Product</option>
             </select>
+        </label>
         
 
         <label>Overall Rating</label>
@@ -39,11 +40,9 @@
             <label><input type="checkbox" name="feature" value="design">Design</label>
         </fieldset>
 
-        <label>Written Review<small>(Optional)</small></label>
-        <textarea id="review" name="review"></textarea>
-
-        <label>Your Name<small>(Optional)</small></label>
-        <input type="text" id="userName" name="userName">
+        <label>Written Review<small>(Optional)<textarea id="review" name="review"></textarea></small></label>
+        
+        <label>Your Name<small>(Optional)<input type="text" id="userName" name="userName"></small></label>
 
         <input type="submit" value="Post Review">
 
