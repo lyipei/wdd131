@@ -17,86 +17,86 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
 });
 
-const temples = [
+const attraction = [
     {
-      templeName: "Aba Nigeria",
+      attractions: "Aba Nigeria",
       location: "Aba, Nigeria",
       dedicated: "2005, August, 7",
       area: 11500,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
     {
-      templeName: "Manti Utah",
+      attractions: "Manti Utah",
       location: "Manti, Utah, United States",
       dedicated: "1888, May, 21",
       area: 74792,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-766504-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/manti-utah/400x250/manti-temple-766504-wallpaper.jpg"
     },
     {
-      templeName: "Payson Utah",
+      attractions: "Payson Utah",
       location: "Payson, Utah, United States",
       dedicated: "2015, June, 7",
       area: 96630,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
     },
     {
-      templeName: "Yigo Guam",
+      attractions: "Yigo Guam",
       location: "Yigo, Guam",
       dedicated: "2020, May, 2",
       area: 6861,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
     },
     {
-      templeName: "Washington D.C.",
+      attractions: "Washington D.C.",
       location: "Kensington, Maryland, United States",
       dedicated: "1974, November, 19",
       area: 156558,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
-      templeName: "Lima Perú",
+      attractions: "Lima Perú",
       location: "Lima, Perú",
       dedicated: "1986, January, 10",
       area: 9600,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
-      templeName: "Mexico City Mexico",
+      attractions: "Mexico City Mexico",
       location: "Mexico City, Mexico",
       dedicated: "1983, December, 2",
       area: 116642,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Taipei Taiwan",
+        attractions: "Taipei Taiwan",
         location: "Taipei, Taipei, Taiwan",
         dedicated: "1984, November, 17",
         area: 9945,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-459051-wallpaper.jpg"
+        "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-459051-wallpaper.jpg"
     },
     {
-        templeName: "Calgray Alberta",
+        attractions: "Calgray Alberta",
         location: "Calgary, Alberta, Canada",
         dedicated: "2012, October, 28",
         area: 33000,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/400x250/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg"
+        "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/calgary-alberta/400x250/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg"
     },
     {
-        templeName: "Laie Hawaii",
+        attractions: "Laie Hawaii",
         location: "Laie, Hawaii, United States",
         dedicated: "1919, November, 27",
         area: 42100,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/400x250/laie-temple-775370-wallpaper.jpg"
+        "https://content.churchofjesuschrist.org/attractionldsorg/bc/attraction/photo-galleries/laie-hawaii/400x250/laie-temple-775370-wallpaper.jpg"
     },
 
   ];
@@ -116,13 +116,13 @@ const temples = [
 
         const img = document.createElement('img');
         img.src = temple.imageUrl;
-        img.alt = temple.templeName;
+        img.alt = temple.attractions;
         img.loading = "lazy";
         figure.appendChild(img);
 
         const figcaption = document.createElement('figcaption');
         figcaption.innerHTML = `
-            <h3>${temple.templeName}</h3>
+            <h3>${temple.attractions}</h3>
             <p>Location: ${temple.location}</p>
             <p>Dedicated: ${formatDate(temple.dedicated)}</p>
             <p>Area: ${temple.area.toLocaleString()} sq ft</p>
@@ -132,10 +132,10 @@ const temples = [
         container.appendChild(figure);
     };
 
-    // Function to display temples based on filters
-    const displayTemples = (filteredTemples) => {
+    // Function to display attraction based on filters
+    const displayattraction = (filteredattraction) => {
         container.innerHTML = ''; // Clear existing content
-        filteredTemples.forEach(renderTemple);
+        filteredattraction.forEach(renderTemple);
     };
 
     // Function to format date
@@ -148,12 +148,12 @@ const temples = [
     };
 
     // Event listeners for navigation links
-    homeLink.addEventListener('click', () => displayTemples(temples));
-    oldLink.addEventListener('click', () => displayTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));
-    newLink.addEventListener('click', () => displayTemples(temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000)));
-    largeLink.addEventListener('click', () => displayTemples(temples.filter(temple => temple.area > 90000)));
-    smallLink.addEventListener('click', () => displayTemples(temples.filter(temple => temple.area < 10000)));
+    homeLink.addEventListener('click', () => displayattraction(attraction));
+    oldLink.addEventListener('click', () => displayattraction(attraction.filter(temple => new Date(temple.dedicated).getFullYear() < 1900)));
+    newLink.addEventListener('click', () => displayattraction(attraction.filter(temple => new Date(temple.dedicated).getFullYear() > 2000)));
+    largeLink.addEventListener('click', () => displayattraction(attraction.filter(temple => temple.area > 90000)));
+    smallLink.addEventListener('click', () => displayattraction(attraction.filter(temple => temple.area < 10000)));
 
-    // Initial display of all temples
-    displayTemples(temples);
+    // Initial display of all attraction
+    displayattraction(attraction);
 })();
