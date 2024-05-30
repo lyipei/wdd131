@@ -1,10 +1,4 @@
-window.addEventListener('load', () => {
-  const year = document.getElementById('currentyear');
-  year.innerHTML = new Date().getFullYear();
-});
-
-
-
+// Define your places array and other necessary variables/constants here
 const places = [
     {
       attractions:"Keelung Zhengbin Fishing Harbor",
@@ -253,8 +247,8 @@ const places = [
       imageUrl:"http://www.tonyhuang39.com/tony/tony1338/20180725_02.JPG",
     },
   ];
-
-  const renderAttraction = (place) => {
+// Function to render a single attraction element
+const renderAttraction = (place) => {
     const container = document.querySelector('.attraction-container');
     const figure = document.createElement('figure');
     figure.classList.add('hover');
@@ -292,30 +286,26 @@ document.getElementById('north').addEventListener('click', () => {
     displayAttractions(northPlaces);
 });
 
-document.getElementById('south').addEventListener('click', () => {
-  const southPlaces = places.filter(place => {
-      const southernCities = ["Chiayi City", "Tainan City", "Kaohsiung City", "Pingtung City"];
-      return southernCities.includes(place.location);
-  });
-  displayAttractions(southPlaces);
-});
-
-document.getElementById('east').addEventListener('click', () => {
-  const eastPlaces = places.filter(place => {
-      const easternCities = ["Hualien Country", "Taitung City"];
-      return easternCities.includes(place.location);
-  });
-  displayAttractions(eastPlaces);
-});
-
-document.getElementById('center').addEventListener('click', () => {
-  const centerPlaces = places.filter(place => {
-      const centralCities = ["Taichung City", "Changhua City", "Nantou City","Yunlin CIty"];
-      return centralCities.includes(place.location);
-  });
-  displayAttractions(centerPlaces);
-});
-
-
 // Initial display of all attractions
 displayAttractions(places);
+
+
+const container = document.querySelector('.attraction-container');
+    const homeLink = document.getElementById('home');
+    const northLink = document.getElementById('north');
+    const southLink = document.getElementById('south');
+    const eastLink = document.getElementById('east');
+    const centerLink = document.getElementById('center');
+    const oceanLink = document.getElementById('ocean');
+    const mountainLink = document.getElementById('mountain');
+
+
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+    
+    // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+    hambutton.addEventListener('click', () => {
+        mainnav.classList.toggle('show');
+        hambutton.classList.toggle('show');
+    });
+
