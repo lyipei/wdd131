@@ -208,7 +208,7 @@ footer p a:hover {
   align-items: center;
   margin: 0;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--accent1-color);
   margin: 0;
   font-family: var(--paragraph-font);
   padding: 2rem;
