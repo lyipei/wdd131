@@ -85,11 +85,7 @@ footer p a:hover {
 }
 
 .welcome-msg {
-  text-align: center;
-  font-size: 3em;
-  grid-row: 2/3;
-  color: var(--accent1-color);
-  font-family: var(--heading-font);
+ display: none;
 }
 
 .container {
@@ -253,6 +249,9 @@ footer p a:hover {
     grid-column: 2/3;
     grid-row: 2/3;
     font-size: 4em;
+    text-align: center;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
 
   }
   .container {
