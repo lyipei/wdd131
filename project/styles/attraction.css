@@ -4,9 +4,6 @@
   --primary-color: #BACACB ;
   --secondary-color: #425D5F;
   --accent1-color: #F8F7F2;
-  --accent2-color: #ffc9b9ff;
-  --accent3-color:#FDE7A2;
-  --paragraph-color:#FAA943;
 
 
   /* change the values below to your chosen font(s) */
@@ -46,6 +43,7 @@ body {
   padding: 0;
   font-family: var(--paragraph-font);
   text-align: center;
+  background-color: var(--accent1-color);
 }
 footer {
   background-color:var(--accent1-color);
@@ -68,7 +66,19 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
-
+.welcome {
+    margin-top: -120px;
+    width: 100%;
+  }
+  .welcome-box {
+    z-index: -1;
+    width: 100%;
+    
+  }
+  #welcome-img {
+    width: 100%;
+  }
+  
 
 #menu {
 	font-size: 1.3rem;
@@ -157,7 +167,7 @@ section {
     font-family: var(--paragraph-font);
 }
 
-img:not(.logo):not(.icon) {
+img:not(.logo):not(.icon):not(#welcome-img) {
     width: 400px;
     height: 250px;
 
@@ -166,11 +176,14 @@ figure {
     margin: 0;
     padding: 10px;
     position: relative;
-    background-color: var(--accent1-color);
+    background-color: #fff;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     height: 550px;
 }
+
+
+
 
 @media only screen and (min-width: 50em) {
     
@@ -186,6 +199,26 @@ figure {
       }
       footer {
         margin-top: 100px;
+      }
+      .welcome {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        margin-top: -120px;
+        width: 100%;
+      }
+      .welcome-box {
+        grid-column: 1/4;
+        grid-row: 1/4;
+      }
+      .welcome-msg {
+        margin-top: 10px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 4em;
+        text-align: center;
+        color: var(--accent1-color);
+        font-family: var(--heading-font);
+    
       }
     .navigation {
         display: flex;
@@ -205,7 +238,7 @@ figure {
         background-color:var(--primary-color);
         color: var(--secondary-color);
     }
-    img:not(.logo):not(.icon)  {
+    img:not(.logo):not(.icon):not(#welcome-img)  {
         width: 400px;
         height: 250px;
     }
