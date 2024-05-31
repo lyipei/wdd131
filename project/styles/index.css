@@ -25,7 +25,7 @@ header {
   background-color: rgba(255, 255, 255, 0.721);
   font-family: var(--heading-font); 
   display: grid;
-  grid-template-columns:60px ;
+
 }
 nav {
   display: flex;
@@ -34,7 +34,7 @@ nav {
 }
 nav a {
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--accent1-color);
   padding: 40px;
   font-size: 25px;
   text-decoration: none;
@@ -221,3 +221,115 @@ footer p a:hover {
   height: auto;
 }
 
+
+@media only screen and (min-width: 50em) {
+  
+  header {
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
+  nav a {
+    color: var(--secondary-color);
+  }
+  footer p {
+    font-size: 1.3em; 
+  }
+  footer {
+    margin-top: 100px;
+  }
+
+  .welcome {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -120px;
+    width: 100%;
+  }
+  .welcome-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+  .welcome-msg {
+    margin-top: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 4em;
+
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;    
+  }
+  .contain1-msg {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+  .contain1-msg h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+  }
+  .contain1-msg h3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .intro-img1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .intro-img2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+  }
+  .contain1-msg p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .contain2-msg {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  .contain2-msg h2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .contain2-msg nav {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .intro-img3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+  }
+  .container-map {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 0;
+  }
+  .mapcon {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 140px);
+  }
+  .mapcon h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+   
+  }
+  .mapcon p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .map1 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  
+  
+}
