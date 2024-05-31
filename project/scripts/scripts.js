@@ -10,7 +10,7 @@ const places = [
       attractions:"Keelung Zhengbin Fishing Harbor",
       location: "Keelung City",
       introduction: "It is a fishing pier that is mainly for holiday, leisure and nostalgia. Its biggest feature is the row of colorful huts next to the pier. Each one has a unique appearance and bright colors, adding a lot of vitality to the pier. breath",
-      imageUrl:"https://www.welcometw.com/wp-content/uploads/2021/07/%E5%9F%BA%E9%9A%86%E6%AD%A3%E6%BF%B1%E6%BC%81%E6%B8%AF@sonia_chen322-e1627635649593.jpg",
+      imageUrl:"https://upload.wikimedia.org/wikipedia/commons/3/3d/Zhengbin_Fishing_Port_%E6%AD%A3%E6%BF%B1%E6%BC%81%E6%B8%AF.jpg",
     },
     {
       attractions: "Chiang Kai-Shek Memorial Hall",
