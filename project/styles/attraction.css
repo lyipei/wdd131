@@ -229,28 +229,28 @@ figure {
         color: var(--accent1-color);
         font-size: 4em;
       }
-    .navigation {
-        display: flex;
-        justify-content: center;
-    }
-    .navigation li {
-        display: block; /* change state in small view */
-    }
-    .navigation a {
-        text-align: center;
-        padding: 20px;
-    }
-    #menu {
-        display: none;
-    }
-    #list {
-        background-color:var(--primary-color);
-        color: var(--secondary-color);
-    }
-    img:not(.logo):not(.icon):not(#welcome-img)  {
-        width: 400px;
-        height: 250px;
-    }
+      .navigation {
+          display: flex;
+          justify-content: center;
+      }
+      .navigation li {
+          display: block; /* change state in small view */
+      }
+      .navigation a {
+          text-align: center;
+          padding: 20px;
+      }
+      #menu {
+          display: none;
+      }
+      #list {
+          background-color:var(--primary-color);
+          color: var(--secondary-color);
+      }
+      img:not(.logo):not(.icon):not(#welcome-img)  {
+          width: 400px;
+          height: 250px;
+      }
 
 
     .attraction-container {
