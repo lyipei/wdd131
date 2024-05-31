@@ -49,7 +49,7 @@ const places = [
       imageUrl:"https://img.ltn.com.tw/Upload/playing/page/2020/08/07/200807-23853-3-exsmm.jpg",
   },
     {
-      attractions: "Hsinchu City God (Chenghuang) Temple ",
+      attractions: "Hsinchu City God Temple ",
       location: "Hsinchu City",
       introduction: "The temple is listed as a city-designated historic site, and its main deity is the City God of the City God. There are many famous snacks nearby",
       imageUrl:"https://data.boch.gov.tw/upload/representImageFile/2021-04-23/c85737ea-960f-43af-9df8-db51a32fbdb5/%E4%BB%A3%E8%A1%A8%E5%9C%96.jpg",
@@ -177,8 +177,8 @@ const places = [
     {
       attractions: "National Museum of Marine Biology",
       location: "Pingtung City",
-      introduction: "https://i0.wp.com/peachnote.cc/wp-content/uploads/2018/05/9b0359a3eec9de8997dacdc5c9b0a5df.jpg?w=2340&ssl=1",
-      imageUrl:"Here is an immersive educational facility showcasing a diverse range of marine life and ecosystems. Visitors can explore interactive exhibits, learn about marine conservation, and observe fascinating sea creatures up close, making it an engaging and informative experience for all ages.",
+      introduction: "Here is an immersive educational facility showcasing a diverse range of marine life and ecosystems. Visitors can explore interactive exhibits, learn about marine conservation, and observe fascinating sea creatures up close, making it an engaging and informative experience for all ages.",
+      imageUrl:"https://facts.net/wp-content/uploads/2023/09/9-enigmatic-facts-about-national-museum-of-marine-biology-and-aquarium-1694758799.jpg",
     },
     {
       attractions: "Eluanbi Cap Lighthouse",
@@ -282,6 +282,11 @@ const displayAttractions = (filteredAttractions) => {
     container.innerHTML = ''; // Clear existing content
     filteredAttractions.forEach(renderAttraction);
 };
+
+document.getElementById('home').addEventListener('click', () => {
+  // Display all attractions
+  displayAttractions(places);
+});
 
 // Filter attractions based on the "North" region when the button is clicked
 document.getElementById('north').addEventListener('click', () => {
