@@ -175,6 +175,7 @@ footer p a:hover {
   background-color: var(--accent1-color);
   font-family: var(--paragraph-font);
   font-weight:500;
+  line-height: 2rem;
 }
 .intro-img3 {
   grid-row: 3/4;
