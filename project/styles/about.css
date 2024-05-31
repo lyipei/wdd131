@@ -1,0 +1,88 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #BACACB ;
+    --secondary-color: #425D5F;
+    --accent1-color: #F8F7F2;
+    --accent2-color: #ffc9b9ff;
+    --accent3-color:#FDE7A2;
+    --paragraph-color:#FAA943;
+  
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Courgette";
+    --paragraph-font: "Playfair Display", Helvetica, sans-serif;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.721);
+    font-family: var(--heading-font); 
+    display: grid;
+  
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav a {
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight:700;
+    z-index: 1;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    text-align: center;
+  }
+  footer {
+    background-color:var(--accent1-color);
+    padding: 25px 50px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer, .social img {
+    padding-top: 15px;
+  }
+  footer a {
+    text-decoration: none;
+    font-family: var(--paragraph-font); 
+  }
+  footer p {
+    font-size: 1rem; 
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+
+  
+
+  @media only screen and (min-width: 50em) {
+    
+    header {
+        display: grid;
+        grid-template-columns: 250px auto;
+      }
+      nav a {
+        color: var(--secondary-color);
+      }
+      footer p {
+        font-size: 1.3em; 
+      }
+      footer {
+        margin-top: 100px;
+      }
+    }
