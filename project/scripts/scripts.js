@@ -10,7 +10,7 @@ const places = [
       attractions:"Keelung Zhengbin Fishing Harbor",
       location: "Keelung City",
       introduction: "It is a fishing pier that is mainly for holiday, leisure and nostalgia. Its biggest feature is the row of colorful huts next to the pier. Each one has a unique appearance and bright colors, adding a lot of vitality to the pier. breath",
-      imageUrl:"https://upload.wikimedia.org/wikipedia/commons/3/3d/Zhengbin_Fishing_Port_%E6%AD%A3%E6%BF%B1%E6%BC%81%E6%B8%AF.jpg",
+      imageUrl:"https://laotiantimes.com/wp-content/uploads/2023/06/image--10-scaled.jpeg",
     },
     {
       attractions: "Chiang Kai-Shek Memorial Hall",
@@ -264,6 +264,9 @@ const places = [
     img.alt = place.attractions;
     img.loading = "lazy";
     figure.appendChild(img);
+
+    img.srcset = `${place.imageUrl} 1200w, ${place.imageUrl} 600w, ${place.imageUrl} 300w`;
+
 
     const figcaption = document.createElement('figcaption');
     figcaption.innerHTML = `
