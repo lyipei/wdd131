@@ -19,7 +19,7 @@
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.721);
+  
   font-family: var(--heading-font); 
   display: grid;
 
@@ -70,21 +70,41 @@ footer p a:hover {
 
 /*home page*/
 .welcome {
-  margin-top: -120px;
+  margin-top: -100px;
   width: 100%;
 }
 .welcome-box {
-  z-index: -1;
-  width: 100%;
-  
+z-index: -1;
+width: 100%;
 }
+
+.welcome {
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+margin-top: -120px;
+width: 100%;
+}
+.welcome-box {
+grid-column: 1/4;
+grid-row: 1/4;
+}
+
 #welcome-img {
-  width: 100%;
+width: 100%;
+}
+.welcome-msg {
+color: var(--accent1-color);
+font-family: var(--heading-font);
+margin-top: 10px;
+grid-column: 2/3;
+grid-row: 2/3;
+font-size: 2em;
+text-align: center;
 }
 
 
 .container {
-  margin-top:-100px;
+  margin-top:-80px;
   width: 100%;
 }
 .contain1-msg {
@@ -216,6 +236,7 @@ footer p a:hover {
 @media only screen and (min-width: 50em) {
   
   header {
+    background-color: rgba(255, 255, 255, 0.721);
     display: grid;
     grid-template-columns: 250px auto;
   }
@@ -230,28 +251,16 @@ footer p a:hover {
   }
 
   .welcome {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
     margin-top: -120px;
-    width: 100%;
-  }
-  .welcome-box {
-    grid-column: 1/4;
-    grid-row: 1/4;
   }
   .welcome-msg {
-    margin-top: 10px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-size: 4em;
-    text-align: center;
     color: var(--accent1-color);
-    font-family: var(--heading-font);
-
+    font-size: 4em;
   }
   .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;    
+    grid-template-columns: 1fr 3fr 1fr;  
+    margin-top:-100px;  
   }
   .contain1-msg {
     grid-column: 2/3;
