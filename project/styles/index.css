@@ -165,7 +165,7 @@ footer p a:hover {
   margin: 0;
   font-family: var(--paragraph-font);
 }
-.contain2-msg nav {
+.contain2-msg p {
   grid-row: 2/3;
   display: flex;
   justify-content: center;
