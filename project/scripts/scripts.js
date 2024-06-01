@@ -250,7 +250,7 @@ const places = [
       attractions: "Waiao Beach",
       location: "Yilan Country",
       introduction: "It is a popular destination known for its wide sandy shores, clear waters, and excellent surfing conditions. The beach offers stunning views of Guishan Island and is a great spot for water sports, sunbathing, and enjoying the coastal scenery. With its relaxed atmosphere and beautiful natural surroundings, Waiao Beach is a favorite spot for both locals and tourists seeking a beachside getaway.",
-      imageUrl:"http://www.tonyhuang39.com/tony/tony1338/20180725_02.JPG",
+      imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E5%A4%96%E6%BE%B3%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4_Waiao_Beach_-_panoramio_%281%29.jpg/2560px-%E5%A4%96%E6%BE%B3%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4_Waiao_Beach_-_panoramio_%281%29.jpg",
     },
   ];
 
